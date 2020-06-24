@@ -6,7 +6,7 @@ ENV pip_packages "ansible"
 # Install dependencies.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-       apt-utils \
+       apt-utils gpg-agent \
        python-setuptools \
        python-pip \
        software-properties-common \
